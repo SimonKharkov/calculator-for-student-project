@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="calculator">
+
+            <div class="block1">
+
+                <div class="Nadpic1">
+                    <a>Расчет количества газобетонных блоков</a>
+                </div>
+
+                <div class="block1_1">
+                    <div class="vvod1">
+                        <a>Параметры строения (метры)</a>
+                    </div>
+                    <div> 
+                        <form class="spis0">
+                            <label for="param1" class="spis"><a>Длина дома</a></label>
+                            <input type="text" id="param1" placeholder="123" class="spis1">
+                        </form>
+                        
+                        <form class="spis0">
+                            <label for="param2" class="spis"><a>Ширина дома</a></label>
+                            <input type="text" id="param2" placeholder="123" class="spis1">
+                        </form>
+
+                        <form class="spis0">
+                            <label for="param3" class="spis"><a>Высота дома</a></label>
+                            <input type="text" id="param3" placeholder="123" class="spis1">
+                        </form>
+                    </div>
+                </div>
+                <div class="paramblock">
+                    <div class="Nadpic2">
+                        <a>Параметры блока</a>
+                    </div>
+                    <div class="dropdown-container"> <!--выпадающий список-->
+                        <div class="dropdown">
+                            <div id="dropdown-button" class="dropdown-button">Выберите вид блока...</div>
+                                <div id="variant" class="dropdown-menu">
+                                    <div class="dropdown-item" data-value="1">600*300*100</div>
+                                    <div class="dropdown-item" data-value="2">600*300*200</div>
+                                    <div class="dropdown-item" data-value="3">600*300*400</div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="block2-4" data-da="block1, last, 900"> 
+            <div class="block2">
+                <div class="Nadpic3"><a>Дополнительно</a></div>
+            </div>
+            <div class="block3">
+                <div class="paramstroy">
+                    <form class="formbl3">
+                        <label for="param4" class="blockin"><a>Площадь дверных проемов</a></label>
+                        <input type="text" id="param4" placeholder="123" class="blockvvod">
+                    </form>
+                        
+                    <form class="formbl3">
+                        <label for="param5" class="blockin"><a>Площадь оконных проемов</a></label>
+                        <input type="text" id="param5" placeholder="123" class="blockvvod">
+                    </form>
+
+                    <div class="input-group">
+                    <label for="add5percent" class="input5">
+                        <span class="input5"><a>Добавить 5%</a></span>  
+                        <input type="checkbox" id="add5percent" class="in5">
+                        <span class="custom-checkbox"></span>
+                    </label>
+
+                    </div>
+                </div>
+                    <button class="button" id="calculateButton"><a>Рассчитать</a></button>
+            </div>
+            <div class="block4">
+                <div>
+                    <div class="Nadpic4"><a>Рассчет</a></div>
+                    <div class="gotov">
+                        <div class="gotoviy" id="result"></div>
+                        <div class="gotoviy" id="result2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        
+        
+        </div>
+    </section>
+     <script src="animation.js"></script>
+</body>
